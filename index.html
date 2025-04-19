@@ -1,40 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>重なっていくカード</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Wedding</h1>
-        <p>Join us in celebrating our special day!</p>
-    </header>
-    <section id="details">
-        <h2>Wedding Details</h2>
-        <p>Date: June 15, 2024</p>
-        <p>Time: 3:00 PM</p>
-        <p>Location: Sakura Garden, Tokyo</p>
+  <div class="container">
+
+    <nav class="bottom-nav">
+        <a href="#makoto">真</a>
+        <a href="#natsumi">菜摘</a>
+        <a href="#couple">二人</a>
+    </nav>
+
+    <div class="card">
+        <h2>Welcome to our wedding</h2>
+        <p>このページを開いていただいた皆さま、 ありがとうございます！
+            私たちのことをもっと知っていただけるよう、 ほんの少しだけお時間をいただきます。</p>
+    </div>
+
+    <section id="makoto">
+        <div class="card">
+            <h2>諏訪真</h2>
+        </div>
+    
+        <div class="card">
+          <h2>誕生日・出身</h2>
+          <p>1994年8月17日に群馬県伊勢崎市で男三兄弟の次男として生まれる</p>
+        </div>
+    
+        <div class="card">
+          <h2>小さい頃</h2>
+          <p>絵を描くのが好きで、将来は美大を目指す。</p>
+        </div>
+    
+        <div class="card">
+          <h2>中学生</h2>
+          <p>卓球部に入部。卓球にハマる。</p>
+        </div>
+    
+        <div class="card">
+          <h2>高校生</h2>
+          <p>群馬県立前橋高等学校 入学<br>
+             美大にいくと言って担任を困らせる。<br>
+             なぜか美大の予備校に通いながら卓球も続ける。</p>
+        </div>
+    
+        <div class="card">
+            <h2>大学</h2>
+            <p>筑波大学芸術専門学群 入学
+                大学の周りを走るサークルに入る。</p>
+        </div>
+    
+        <div class="card">
+            <h2>社会人</h2>
+            <p>博報堂 アイ・スタジオ のアートディレクターとしてWebCMやWebサイト制作、SNSの企画などをしています。</p>
+        </div>
+      
+        <div class="card">
+            <h2>趣味</h2>
+            <p>筋トレ、野球、ツール開発</p>
+        </div>
+    
+        <div class="card">
+            <h2>好きな食べ物</h2>
+            <p>小幡の梅しそ唐揚げ、小幡の麻婆豆腐</p>
+        </div>
     </section>
-    <section id="rsvp">
-        <h2>RSVP</h2>
-        <p>Please let us know if you can make it!</p>
-        <form action="/submit-rsvp" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="attendance">Will you attend?</label>
-            <select id="attendance" name="attendance" required>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-            <button type="submit">Submit</button>
-        </form>
+
+    <section id="natsumi">
+        <div class="card">
+            <h2>小幡 菜摘</h2>
+        </div>
+    
+        <div class="card">
+          <h2>誕生日・出身</h2>
+          <p>1994年8月17日に群馬県伊勢崎市で男三兄弟の次男として生まれる</p>
+        </div>
+    
+        <div class="card">
+          <h2>小さい頃</h2>
+          <p>絵を描くのが好きで、将来は美大を目指す。</p>
+        </div>
+    
+        <div class="card">
+          <h2>中学生</h2>
+          <p>卓球部に入部。卓球にハマる。</p>
+        </div>
+    
+        <div class="card">
+          <h2>高校生</h2>
+          <p>群馬県立前橋高等学校 入学<br>
+             美大にいくと言って担任を困らせる。<br>
+             なぜか美大の予備校に通いながら卓球も続ける。</p>
+        </div>
+    
+        <div class="card">
+            <h2>大学</h2>
+            <p>筑波大学芸術専門学群 入学
+                大学の周りを走るサークルに入る。</p>
+        </div>
+    
+        <div class="card">
+            <h2>社会人</h2>
+            <p>博報堂 アイ・スタジオ のアートディレクターとしてWebCMやWebサイト制作、SNSの企画などをしています。</p>
+        </div>
+      
+        <div class="card">
+            <h2>趣味</h2>
+            <p>筋トレ、野球、ツール開発</p>
+        </div>
+    
+        <div class="card">
+            <h2>好きな食べ物</h2>
+            <p>小幡の梅しそ唐揚げ、小幡の麻婆豆腐</p>
+        </div>
     </section>
-    <footer>
-        <p>Thank you for being part of our journey!</p>
-    </footer>
-    <script src="main.js"></script>
+
+    <section id="couple">
+        <div class="card">
+            <h2>二人のこと</h2>
+        </div>
+   
+        <div class="card">
+          <h2>誕生日・出身</h2>
+          <p>1994年8月17日に群馬県伊勢崎市で男三兄弟の次男として生まれる</p>
+        </div>
+    
+        <div class="card">
+          <h2>小さい頃</h2>
+          <p>絵を描くのが好きで、将来は美大を目指す。</p>
+        </div>
+    
+        <div class="card">
+          <h2>中学生</h2> 
+          <p>卓球部に入部。卓球にハマる。</p>
+        </div>
+    
+        <div class="card">
+          <h2>高校生</h2>
+          <p>群馬県立前橋高等学校 入学<br>
+             美大にいくと言って担任を困らせる。<br>
+             なぜか美大の予備校に通いながら卓球も続ける。</p>
+        </div>
+    
+        <div class="card">
+            <h2>大学</h2>
+            <p>筑波大学芸術専門学群 入学
+                大学の周りを走るサークルに入る。</p>
+        </div>
+    
+        <div class="card">
+            <h2>社会人</h2>
+            <p>博報堂 アイ・スタジオ のアートディレクターとしてWebCMやWebサイト制作、SNSの企画などをしています。</p>
+        </div>
+      
+        <div class="card">
+            <h2>趣味</h2>
+            <p>筋トレ、野球、ツール開発</p>
+        </div>
+    
+        <div class="card">
+            <h2>好きな食べ物</h2>
+            <p>小幡の梅しそ唐揚げ、小幡の麻婆豆腐</p>
+        </div>
+    </section>
+
+  </div>
 </body>
 </html>
