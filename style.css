@@ -80,7 +80,7 @@ section {
   font-size: 1rem;
   color: white;
   border-radius: 60px;
-  padding: 2rem;
+  padding: 3rem;
 }
 .card img {
   max-width: 100%;
@@ -141,6 +141,7 @@ section {
 .bottom-nav {
   position: fixed;
   bottom: 0;
+  opacity: 1;
   width: 100%;
   max-width: 500px;
   display: flex;
@@ -148,6 +149,11 @@ section {
   align-items: center;
   padding: 0.5rem 1rem;
   z-index: 999;
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.bottom-nav.hidden {
+  transform: translateY(50%);
+  opacity: 0;
 }
 .bottom-nav a {
   color: white;

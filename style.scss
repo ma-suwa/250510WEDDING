@@ -91,7 +91,7 @@ section{
   font-size: 1rem;
   color: white;
   border-radius: 60px;
-  padding: 2rem;
+  padding: 3rem;
   img{
     max-width: 100%;
     width: 100%;
@@ -138,14 +138,19 @@ section{
 .bottom-nav {
   position: fixed;
   bottom: 0;
-
+    opacity: 1;
   width: 100%;
   max-width: 500px;
   display: flex;
   justify-content: space-around;
-align-items: center;
+  align-items: center;
   padding: 0.5rem 1rem;
   z-index: 999;
+  transition: all 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  &.hidden {
+    transform: translateY(50%);
+    opacity: 0;
+}
 
   a {
     color: white;
@@ -162,5 +167,6 @@ align-items: center;
     &:hover {
       background: rgba(255, 255, 255, 0.3);
     }
+
   }
 }
