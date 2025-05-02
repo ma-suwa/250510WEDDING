@@ -3,7 +3,7 @@
 
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    console.log(currentScroll);
+    
 
     if (currentScroll > lastScroll && currentScroll > 100) {
       // 下にスクロールしたら隠す

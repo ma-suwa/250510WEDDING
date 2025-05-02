@@ -11,10 +11,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "serif", "Times New Roman", "Hiragino Mincho ProN", "MS PMincho", "Batang", serif;
   background: #fbf7f0;
   display: flex;
   justify-content: center;
+  font-feature-settings: "palt";
 }
 
 .container {
@@ -115,6 +116,10 @@ section {
 .card:nth-of-type(9) {
   background: #E94B3C;
 }
+.card.cover {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+}
 .card h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -129,13 +134,107 @@ section {
   width: 100vw;
 }
 
+.comment_card {
+  padding: 4rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  border-radius: 60px 60px 0 0;
+  background: linear-gradient(to top, #f3a915, #ff6e3a);
+}
+
+.couple_section {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.couple_comment {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+.couple_comment.interview {
+  flex-direction: row;
+}
+.couple_comment.interview p {
+  border-radius: 40px 40px 40px 4px;
+  color: #000;
+  background: #ffd900;
+}
+.couple_comment.suwa {
+  padding-left: 2rem;
+  flex-direction: row-reverse;
+}
+.couple_comment.suwa p {
+  border-radius: 40px 40px 4px 40px;
+  background: rgba(87, 35, 0, 0.2509803922);
+}
+.couple_comment.obata {
+  padding-left: 2rem;
+  flex-direction: row;
+}
+.couple_comment.obata p {
+  border-radius: 40px 40px 40px 4px;
+  background: rgba(87, 35, 0, 0.3764705882);
+}
+.couple_comment img {
+  width: 40px;
+  border-radius: 100%;
+}
+.couple_comment p {
+  text-align: left;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  color: #FFF;
+  padding: 1.5rem 1.5rem;
+}
+
+.movie {
+  background: white;
+  padding-bottom: 3rem;
+}
+.movie h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}
+.movie iframe {
+  padding: 2rem 2rem 0 2rem;
+  width: 100%;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
 .back-to-top {
   width: 100%;
-  background: #FFF;
-  height: 100vh;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.back-to-top a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: rgb(0, 0, 0);
+  transition: background 0.2s;
+}
+.back-to-top a:hover {
+  background: rgba(44, 44, 44, 0.8);
 }
 
 .bottom-nav {
