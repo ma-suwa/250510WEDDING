@@ -1,5 +1,7 @@
 // カードの個別背景色（index順に指定）
-$card-colors: #FF6F61, #6B5B95, #88B04B, #F7CAC9, #92A8D1, #F7786B, #DECF3F, #45B8AC, #E94B3C;
+$card-colors: #307CBC, #EE7C1C, #5F9B2C, #E95320,#45B8AC, #FFBC02,#FF4F52, #6f45d1,#E94B3C;
+
+//#FF6F61, #6B5B95, #88B04B, #F7CAC9, #92A8D1, #F7786B, #DECF3F, #45B8AC, #E94B3C;
 
 // ======== 共通設定 ========
 $irem: 1rem; // Define $irem variable
@@ -29,7 +31,6 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-
   margin: 0 auto;
   background: #000;
 }
@@ -92,7 +93,7 @@ section{
   font-size: 1rem;
   color: white;
   border-radius: 60px;
-  padding: 3rem;
+  padding: 1rem;
   img{
     max-width: 100%;
     width: 100%;
@@ -214,7 +215,7 @@ section{
 }
 .back-to-top{
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 0rem 4rem 0rem;
   text-align: center;
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
