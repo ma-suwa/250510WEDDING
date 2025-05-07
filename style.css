@@ -116,10 +116,6 @@ section {
 .card:nth-of-type(9) {
   background: #E94B3C;
 }
-.card.cover {
-  background-image: url(../assets/background.jpg);
-  background-size: cover;
-}
 .card h2 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
